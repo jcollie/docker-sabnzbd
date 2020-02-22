@@ -25,7 +25,7 @@ RUN dnf -y update && \
     /opt/sabnzbd/bin/pip install --no-cache-dir --upgrade pip && \
     /opt/sabnzbd/bin/pip install --no-cache-dir --upgrade setuptools && \
     /opt/sabnzbd/bin/pip install --no-cache-dir --upgrade --requirement /opt/sabnzbd/src/requirements.txt && \
-    mkdir /media /usenet /opt/sabnzbd/etc /opt/sabnzbd/data /opt/sabnzbd/logs && \
+    mkdir /usenet /opt/sabnzbd/etc /opt/sabnzbd/data /opt/sabnzbd/logs && \
     groupadd -g 5000 media && \
     useradd -u 5000 -g 5000 -d /opt/sabnzbd -M media && \
     rm -rf /usr/share/doc /usr/share/man /var/cache/dnf
