@@ -1,10 +1,10 @@
-FROM registry.fedoraproject.org/fedora:31
+FROM registry.fedoraproject.org/fedora:32
 
 ENV LANG C.UTF-8
 
 RUN dnf -y update && \
-    dnf -y install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-31.noarch.rpm \
-                   http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-31.noarch.rpm && \
+    dnf -y install http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-32.noarch.rpm \
+                   http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-32.noarch.rpm && \
     dnf -y install bind-utils \
                    gcc \
                    git \
